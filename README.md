@@ -1,6 +1,6 @@
 # VulneraX
 
-VulneraX is an autonomous Red Team platform that orchestrates AI-driven reconnaissance, payload generation, attack execution, and adaptive reporting. It combines Python-based scanning/orchestrator agents, a Next.js frontend control plane, and a Streamlit report viewer so you can trigger ethical hacking workflows, inspect results, and export polished PDFs without stitching together multiple services.
+VulneraX is an autonomous Red Team platform that orchestrates AI-driven reconnaissance, payload generation, attack execution, and adaptive reporting. It combines Python-based scanning/orchestrator agents so you can trigger ethical hacking workflows, inspect results, and export polished PDFs without stitching together multiple services.
 
 ## Architecture
 - `agent/`: Python services (FastAPI + Flask) that expose `/scan`/`/execute`, orchestrate Google ADK agents (`recon_agent`, `payload_agent`, `attack_agent`, `report_agent*`), and contain scanners (`SimpleScanner`, `EnhancedSecurityScanner`, `SecurityScanner`) backed by OWASP ZAP.
